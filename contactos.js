@@ -1,11 +1,5 @@
-// Arreglo plano donde se almacenaran los contactos
+
 const contactos = [];
-/*
-Agrega un nuevo contacto a la lista.
-@param {string} nombre 
-@param {string} telefono
-@returns {boolean} true si se agrego con exito, false si hay campos vacios.
-*/
 function agregarContacto(nombre, telefono) {
     const nombreTrim = nombre.trim();
     const telefonoTrim = telefono.trim();
@@ -16,18 +10,12 @@ function agregarContacto(nombre, telefono) {
 contactos.push({nombre: nombreTrim, Telefono: telefonoTrim});
 return true;
 }
-/* 
-    Retorna la lista actual de contactos.
-*/
+
    function obtenerContactos() {
         return contactos;
 }
 
-/*
-Busca un contacto de forma secuencial paso a paso.
-@param {string} nombreBuscado
-@returns {Object} Resultado con el estado, interacciones y datos del contacto encontrado.
-*/
+
 function buscarContacto(nombreBuscado) {
     const nombreBusqTrim = nombreBuscado.trim().toLowerCase();
     let interacciones = 0;
