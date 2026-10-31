@@ -7,7 +7,7 @@ function agregarContacto(nombre, telefono) {
     if (!nombreTrim || !telefonoTrim) {
         return false;
     }
-contactos.push({nombre: nombreTrim, Telefono: telefonoTrim});
+contactos.push({nombre: nombreTrim, telefono: telefonoTrim});
 return true;
 }
 
