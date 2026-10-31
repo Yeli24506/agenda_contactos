@@ -1,3 +1,4 @@
+// importar las funciones del archivo contactos.js
 const readline = require('readline');
 const { agregarContacto, obtenerContactos, buscarContactoSecuencial } = require('./contactos');
 
@@ -5,7 +6,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
+// genera  un menu en el la persona elige que nececita
 function mostrarMenu() {
     console.log("\n--- AGENDA DE CONTACTOS LINEAL ---");
     console.log("1. Agregar contacto");
@@ -17,7 +18,7 @@ function mostrarMenu() {
         manejarOpcion(opcion.trim());
     });
 }
-
+// maneja la opcion que el usuario elige
 function manejarOpcion(opcion) {
     switch (opcion) {
         case '1':

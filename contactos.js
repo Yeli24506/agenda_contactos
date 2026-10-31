@@ -1,5 +1,7 @@
 
 const contactos = [];
+// Esta funcion sirva para agregar los nombres y los contactos a la agenda,
+//  y tambien valida que no se ingresen valores vacios.
 function agregarContacto(nombre, telefono) {
     const nombreTrim = nombre.trim();
     const telefonoTrim = telefono.trim();
@@ -15,7 +17,9 @@ return true;
         return contactos;
 }
 
-
+// Esta funcion sirve para buscar un contacto en la agenda,
+//  y devuelve un objeto con la informacion del contacto encontrado,   
+//  la cantidad de interacciones realizadas y la posicion del contacto en la lista.
 function buscarContacto(nombreBuscado) {
     const nombreBusqTrim = nombreBuscado.trim().toLowerCase();
     let interacciones = 0;
@@ -40,6 +44,7 @@ function buscarContacto(nombreBuscado) {
     };
 
 }
+// Esta funcion sirve para buscar un contacto 
 module.exports = {
     agregarContacto,
     obtenerContactos,
